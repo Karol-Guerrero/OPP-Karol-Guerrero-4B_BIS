@@ -1,8 +1,6 @@
 import os
 
 # Datos de conexión a MySQL/MariaDB de XAMPP.
-# Por defecto XAMPP usa: usuario "root", SIN contraseña y puerto 3306
-# (si el puerto 3306 estaba ocupado, XAMPP puede usar 3307: míralo en su panel).
 DB_CONFIG = {
     "host": os.getenv("DB_HOST", "localhost"),
     "port": int(os.getenv("DB_PORT", "3306")),
